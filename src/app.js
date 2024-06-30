@@ -9,7 +9,7 @@ app.use("/api/v1/experiences", experienceRouter);
 
 app.get("/test", (req, res) => {
     res.status(200).json({
-        message: "Portfolio server is running..."
+        message: "Portfolio server is running...",
     });
 });
 

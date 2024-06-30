@@ -6,7 +6,8 @@
     "main": "src/server.js",
     "scripts": {
         "start": "node src/server.js",
-        "dev": "nodemon src/server.js"
+        "dev": "nodemon src/server.js",
+        "prettier": "prettier --ignore-path .gitignore --write \"./src/**/*.+(js|ts|json)\""
     },
     "keywords": [
         "portfolio-backend",

@@ -6,4 +6,3 @@ const experienceRouter = express.Router();
 experienceRouter.post("/", ExperienceController.addAExperience);
 
 export default experienceRouter;
-

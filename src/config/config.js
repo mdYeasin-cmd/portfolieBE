@@ -5,4 +5,4 @@ export default {
     port: process.env.PORT,
     hostname: process.env.HOSTNAME,
     db_url: process.env.DB_URL,
-}
+};
