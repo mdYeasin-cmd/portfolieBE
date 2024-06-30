@@ -1,6 +1,10 @@
+import Experience from "../models/experience.model.js";
+
 class ExperienceService {
-    static addAExperience() {
-        console.log("I reached the service");
+    static async addAExperience(payload) {
+        const result = await Experience.create(payload);
+
+        return result;
     }
 }
 

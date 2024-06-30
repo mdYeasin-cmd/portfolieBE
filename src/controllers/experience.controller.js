@@ -1,13 +1,12 @@
 import ExperienceService from "../services/experience.service.js";
+import tryCatchHandler from "../utils/tryCatchHandler.js";
 
 class ExperienceController {
-    static addAExperience = (req, res) => {
-        const result = ExperienceService.addAExperience();
+    static addAExperience = tryCatchHandler(async (req, res) => {
+        const result = await ExperienceService.addAExperience(req.body);
 
-        res.status(200).json({
-            message: "Hello I'm here!",
-        });
-    };
+        res.status(201).json(result);
+    });
 }
 
 export default ExperienceController;

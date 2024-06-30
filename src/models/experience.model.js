@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+import { Schema, model } from "mongoose";
 
 const experienceSchema = new Schema(
     {
@@ -39,6 +39,6 @@ const experienceSchema = new Schema(
     }
 );
 
-const Experience = mongoose.model("Experience", experienceSchema);
+const Experience = model("Experience", experienceSchema);
 
 export default Experience;
